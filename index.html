@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/0d065f8783.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+
+    <title>Document</title>
+    <style>
+        body::-webkit-scrollbar{
+            scrollbar-width: none;
+        } 
+        #projects {
+    overflow-x: hidden; /* Hide overflow to prevent showing more than one project at a time and prevent screen expansion */
+        }
+/**
+    }
+     .project-slider {
+        display: flex;
+        
+        animation: slide 30s infinite; /* Adjust the duration as needed 
+    }
+    
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        33% { transform: translateX(-33%); }
+        66% { transform: translateX(33%); }
+        100% { transform: translateX(0); }
+    }
+    
+    .project-item {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        width: 60vw;
+        height: 70vh;
+        
+    }
+    
+    .paused{
+        animation-play-state: paused;
+    }
+*/
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="bg-fuchsia-700 flex justify-between sm:px-6 sm:py-2 sm:fixed sm:w-full max-sm:min-w-full top-0 z-10 ">
+        <div class="flex max-sm:block ">
+            <div class="my-4 font-bold text-[46px] text-white">Arish Ali</div>
+            <div class="mx-6 my-8 font-bold text-xl text-white hover:text-slate-700 cursor-pointer max-sm:mx-2"><a href="#">Home</a></div>
+            <div class="mx-6 my-8 font-bold text-xl text-white cursor-pointer max-sm:mx-2 hover:text-slate-700"><a href="#about">About</a></div>
+            <div class="mx-6 my-8 font-bold text-xl text-white cursor-pointer max-sm:mx-2 hover:text-slate-700"><a href="#skills">Skills</a></div>
+            <div class="mx-6 my-8 font-bold text-xl text-white cursor-pointer max-sm:mx-2 hover:text-slate-700"><a href="#projects">Projects</a></div>
+            <div class="mx-6 my-8 font-bold text-xl text-white cursor-pointer max-sm:mx-2 hover:text-slate-700"><a href="#contact">Contact</a></div>
+        </div>
+        <div class=" max-sm:hidden">
+            <a href="https://drive.google.com/file/d/1mnydUPv3mZx5YZXelbemnKzJX_tIuQOu/view?usp=sharing" download="ArishAli-FrontendDeveloper(React)-Fe8(2).pdf">
+                <button class="border-separate bg-blue-600 border-red-400 mt-7 px-4 py-3 w-[120px] text-white rounded-lg font-bold text-xl hover:bg-blue-400 hover:text-amber-200">Resume</button>
+            </a>
+            
+        </div>
+    </nav>
+
+    <div id="home" class="flex h-[750px] text-slate-800 font-extrabold flex-col py-56 sm:px-20 sm:bg-left max-sm:bg-center bg-cover bg-center bg-no-repeat"
+        style="background-image: url('https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_1280.jpg')">
+        <p class="text-xl text-gray-600">Hello, &#128075 <span class="text-yellow-100">I'm</span></p>
+        <h1 class="py-4 text-5xl text-gray-600">Arish Ali</h1>
+        <h3 class="text-2xl text-gray-600">And I'm a frontend developer(React)</h3>
+        <a href="https://drive.google.com/file/d/1sGDoVtD2vmeovcb2gyvqMk13uwM1_Zra/view?usp=sharing" download="ArishAli-FrontendDeveloper(React)-nqxK (1) (1).pdf">
+            <button class="border-separate bg-red-400 border-red-400 px-4 py-3 mt-4 w-[120px] rounded-lg hover:bg-blue-400 hover:text-amber-100">Resume</button>
+        </a>
+        
+    </div>
+    <div id="about" class="pt-32 pb-20 sm:px-10 bg-gray-50" >
+        <h1 class="m-auto text-center font-bold text-[40px] mb-28 ">About Me</h1>
+        <div class="sm:ml-32 sm:flex justify-between sm:w-fit shadow-lg p-6 rounded-lg shadow-slate-800">
+            <img src="https://i.postimg.cc/66r4NyFf/photo.png" alt="" class="h-80 w-72 rounded-md">
+            <h3 class="max-md:ml-2 md:ml-50 lg:ml-64 mt-20 font-semibold sm:text-xl sm:text-wrap">I'm Arish ali and <span class="text-lime-500">I'm a frontend developer(React)</span> <br><br><span class="text-lg font-normal">
+                I'm a web developer skilled in HTML, CSS, JavaScript, and React, with expertise in building dynamic and responsive websites.
+                 Experienced in utilizing APIs for seamless data integration, I'm dedicated to crafting visually appealing and functional web experiences.</span></h3>
+                </div>
+    </div>
+    <div id="skills" class="bg-slate-950 min-w-full h-auto flex flex-col py-24 items-center text-white ">
+        <h1 class="font-semibold text-[40px] pb-10">Skills</h1>
+        <div class="bg-slate-800 text-white flex flex-col items-center p-10 mt-10 rounded-lg px-14 hover:bg-sky-700">
+            <img src="https://www.htmlpanda.com/assets-new/images/front-end-logo-black.png" class="w-32 h-24" alt="">
+            <h2 class="font-medium text-[26px] my-4">Front-End</h2>
+            <p class="font-normal text-[20px] my-4 ">HTML, CSS, JAVASCRIPT & REACT</p>
+        </div>
+    </div>
+    <div>
+        <h1 class="mt-20 mb-10 font-bold text-[40px] text-center ">Techstacks</h1>
+    <div id="stacks" class="flex flex-wrap justify-around p-10">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPmou6evgeGnMsU4Kac3TEv60q65uqVigxib1NYMmoFw&s" alt="">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_-uc6ZN_kiIA0ks36PBLP5SPgi4Drf7JPhe28Y2WsygjI5SagcNVszXZ_nV6nvik9h4w&usqp=CAU" class="w-[150px]" alt="">
+        </div>
+        <div>
+            <img class="w-48" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/originals/f3/47/70/f34770503b90f26ea389f557500ff825.png" class="w-56" alt="">
+        </div>
+    </div>
+    <p class="text-center font-bold text-[40px] mt-20 mb-10 ">Tools</p>
+    <div id="tools" class="flex flex-wrap justify-evenly pt-10 pb-20">
+        <div>
+            <img class="w-64" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9FF32-BlZhk4RMI_JhibDihgWd5rEIvEkKNq1-M4rwKhmuj16R7slyiVG-AKYTG2VrM&usqp=CAU" alt="">
+        </div>
+        <div>
+            <img class="w-56" src="https://seeklogo.com/images/P/postman-api-platform-logo-D6B8AB9B0D-seeklogo.com.png" alt="">
+        </div>
+        <div>
+            <img class="w-[300px]" src="https://repository-images.githubusercontent.com/657248114/d3c7b91a-b285-4d1e-8429-5de1acc5f61e" alt="">
+        </div>
+    </div>
+</div>
+<div id="projects" class="swiper flex pb-10 pt-7 h-auto w-auto flex-col bg-slate-950 items-center sm:px-0 md:px-32 ">
+    <h1 class="text-[50px] font-bold text-white ">Projects</h1>
+    <div class="swiper-wrapper text-stone-200 ">
+    <div class="swiper-slide md:px-2 py-2 hover:border hover:border-slate-500 rounded-md md:mx-4 my-4 max-md:pr-6" >
+        <div class="bg-black flex flex-col justify-between p-4 min-h-[700px] ">
+            <img src="https://i.postimg.cc/c4cLJZV7/Cronometer-Eat-smarter-Live-better-Google-Chrome-18-03-2024-00-01-16.png"
+             class="w-96 m-auto" alt="">
+            <div><h1 class="text-center text-3xl my-4">Cronometer Webapp</h1></div>
+            <div class="my-4">
+                <p class="text-center">The Cronometer web project is a nutrition tracking platform designed to help users make informed dietary choices.
+                    The project aims to provide a user-friendly and informative experience for individuals interested in tracking their nutrition and 
+                    promotes mobile responsiveness and compatibility across various devices.</p></div>
+            <div class="my-4">
+                <p class="text-center max-sm:text-xl md:text-2xl">
+                    Tech Stack: Javascript | HTML | CSS
+                </p>
+                <div class="flex justify-between px-3 my-4">
+                    <a href="https://github.com/Arish089/CW-PROJECT" target="_blank"><button class="border bg-slate-800 text-white p-2 rounded-md  border-separate">Git Hub</button></a>
+                    <a href="https://crono-lite.netlify.app/" target="_blank"><button class="border bg-slate-800 text-white p-2 rounded-md border-separate">Live Site</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide md:px-2 py-2 hover:border hover:border-slate-500 rounded-md md:mx-4 my-4 max-md:pr-6">
+        <div class="bg-black flex flex-col justify-between p-4 min-h-[700px] ">
+            <img src="https://i.postimg.cc/QCmGbn5j/Screenshot-36.png" class="w-96 m-auto" alt="">
+            <div><h1 class="text-center text-3xl my-4">Youtube-Midas</h1></div>
+            <div class="my-4">
+                <p class="text-center ">
+                    This React YouTube project is a SPA built by using Vite and React frameworks, designed to provide users with a seamless and efficient 
+        experience for browsing and watching YouTube videos. It leverages modern web technologies to deliver a fast, ultra-responsive, and feature-rich user interface.
+                </p>
+            </div>
+            <div class="my-4">
+                <p class="text-center max-sm:text-xl md:text-2xl">
+                    Tech Stack: React | Vite | HTML | Tailwindcss | RESTful API 
+                </p>
+            
+            <div class="flex justify-between px-3 my-4">
+                <a href="https://github.com/Arish089/youtube_midas" target="_blank"><button class="border bg-slate-800 text-white p-2 rounded-md  border-separate">Git Hub</button></a>
+                <a href="https://youtube-midas.netlify.app/" target="_blank"><button class="border bg-slate-800 text-white p-2 rounded-md  border-separate">Live Site</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="swiper-slide md:px-2 py-2 hover:border hover:border-slate-500 rounded-md md:mx-4 my-4 max-md:pr-6">
+        <div class="bg-black flex flex-col justify-between p-4 min-h-[700px] ">
+            <img src="https://i.postimg.cc/Y0wTR6k1/Document-Google-Chrome-18-03-2024-00-27-55.png" class="w-96 m-auto" alt="">
+            <div><h1 class="text-center text-3xl" >Tata-1mgs</h1></div>
+            <div class="my-4">
+                <p class="text-center ">
+                    It is a clone React.js project attempted to mimic e-commerce website tata-1mg which is a healthcare platform by Tata.
+                     It is a single page application which has firebase authentication, restricting access to certain part based on it, cart functionality and etc.
+                     It is highly responsive and has good user interface to make it look good aesthetically
+
+                </p>
+            </div>
+            <div class="my-4">
+                <p class="text-center max-sm:text-xl md:text-2xl">
+                    Tech Stack: React | Vite | Firebase | Chakra UI | RESTful API 
+                </p>
+            
+            <div class="flex justify-between px-3 my-4">
+                <a href="https://github.com/Arish089/CW-2" target="_blank"><button class="border bg-slate-800 text-white p-2 rounded-md  border-separate">Git Hub</button></a>
+                <a href="https://tata-1mgs.netlify.app/" target="_blank"><button class="border bg-slate-800 text-white p-2 rounded-md  border-separate">Live Site</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="swiper-slide md:px-2 py-2 hover:border hover:border-slate-500 rounded-md md:mx-4 my-4 max-md:pr-6">
+        <div class="bg-black flex flex-col justify-between p-4 min-h-[700px]">
+            <img src="https://i.postimg.cc/JnCTCRg8/Document-Google-Chrome-18-03-2024-00-27-32.png"class="w-96 m-auto" alt="">
+            <div>
+                <h1 class="text-center text-3xl" >Movix_</h1>
+            </div>
+            <div class="my-4">
+                <p class="text-center ">
+                    It is a movie info app, incorporating firebase in three modes: anonymous, google, and email authentication. It has extremely rich interface and is
+                    ultra responsive across all screens which gives it premium feel. It lets user browse through already defined sections of Movies, Tv soaps, Series, Anime and etc and also lets
+                    you search and even look into more details about the respective content.
+                </p>
+            </div>
+            <div class="my-4">
+                <p class="text-center max-sm:text-xl md:text-2xl">
+                    Tech Stack: React | Vite | Firebase | Chakra UI | RESTful API 
+                </p>
+            
+            <div class="flex justify-between px-3 my-4">
+                <a href="https://github.com/Arish089/CW-2.2" target="_blank"><button class="border bg-slate-800 text-white p-2 rounded-md  border-separate">Git Hub</button></a>
+                <a href="https://movix-089.netlify.app/" target="_blank"><button class="border bg-slate-800 text-white p-2 rounded-md  border-separate">Live Site</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-pagination bg-slate-700 "  ></div>
+    <!-- If you want navigation arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<div class="p-10">
+    <h1 class="text-center m-5 font-bold text-[40px] border-b-2 border-fuchsia-700 ">Github Contributions</h1>
+    <div class="sm:w-[50%] border-separate border-2 lg:m-auto mt-40 shadow-xl">
+        <div class="sm:m-5 ">
+            <img src="https://raw.githubusercontent.com/Arish089/readme/master/profile-summary-card-output/calm/0-profile-details.svg" alt=""> 
+        </div>
+        <div class="sm:m-5 sm:flex justify-between">
+            <img src="https://raw.githubusercontent.com/Arish089/readme/master/profile-summary-card-output/calm/1-repos-per-language.svg" alt="">
+            <img src="https://raw.githubusercontent.com/Arish089/readme/master/profile-summary-card-output/calm/2-most-commit-language.svg" alt="">
+        </div>
+        <div class="sm:m-5 sm:flex justify-between">
+            <img src="https://raw.githubusercontent.com/Arish089/readme/master/profile-summary-card-output/calm/3-stats.svg" alt="">
+            <img src="https://raw.githubusercontent.com/Arish089/readme/master/profile-summary-card-output/calm/4-productive-time.svg" alt="">
+        </div>
+    </div>
+</div>
+ 
+<div id="contact" class="bg-slate-900 pb-20 pt-7 ">
+    <h1 class="text-center mb-16 font-bold text-[40px] text-white">Contact</h1>
+    <div class="max-sm:flex-col max-sm:justify-center max-sm:items-center flex justify-between sm:px-3 bg-slate-900 w-full ">
+    
+        <div class="bg-slate-100 max-sm:w-[57%] mb-3 w-[22%] max-lg:w-fit flex lg:pr-4 rounded-md">
+        <a href="mailto:arish.ali089@gmail.com" class="max-xl:flex-col flex ">
+            <i class="fa-regular fa-4x fa-envelope"></i>
+        <p class="max-sm:ml-0 mt-5 font-bold md:text-xl ">arish.ali089@gmail.com</p>
+        </a>    
+    </div>
+    <div class="bg-slate-100 max-sm:w-[50%] w-[22%] mb-3 flex p-2 rounded-md max-lg:flex-col">
+        <i class="fa-solid fa-3x fa-phone mt-3 pl-2"></i>
+        <p class="lg:ml-3 xl:ml-12 sm:mt-5 font-bold sm:text-2xl">+91-8340194014</p>
+    </div>
+    <div class="bg-slate-100 max-sm:w-[50%] w-[22%] flex p-2 rounded-md mb-3">
+        <a href="https://www.linkedin.com/in/arish-ali-7416261b7/" class="max-lg:flex-col flex">
+            <i class="fa-brands fa-4x fa-linkedin mt-1 sm:pl-2"></i>
+            <p class="max-sm:ml-12 lg:ml-2 xl:ml-24 mt-4 font-bold sm:text-3xl">Arish Ali</p>
+        
+        </a>
+    </div>
+    <div class="bg-slate-100 w-[22%] max-sm:w-[50%] flex p-2 rounded-md mb-3">
+        <a href="https://github.com/" class="max-lg:flex-col flex">
+            <i class="fa-brands fa-4x fa-github mt-1 sm:pl-2"></i>
+        <p class="max-sm:ml-12 lg:ml-2 xl:ml-24 mt-4 font-bold sm:text-3xl">Arish089</p>
+        </a>
+        
+    </div>
+</div>
+</div>
+
+<div class="bg-fuchsia-700 flex justify-between px-6 py-2 font-bold text-white text-3xl sm:pl-80">
+    <span class="mt-5">That's all from my side, waiting to hear from your side!</span></div>
+
+<script>
+
+// Example of programmatically moving to a specific slide
+//mySwiper.slideTo(2); // Moves to slide 3
+
+var mySwiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView:2,
+        centeredSlides:false,
+        slidesPerGroup:1,
+        spaceBetween:140,
+        grabCursor:true,
+        keyboard:{
+          enabled: true,
+        },
+        breakpoints:{
+            320: {
+                    slidesPerView: 1,
+                    centeredSlides:true,
+                },
+                // when window width is <= 768px
+                768: {
+                    slidesPerView:1,
+                    spaceBetween: 130
+                },
+                1024: {
+                    slidesPerView: 2,
+                    centeredSlides:false,
+                },
+        },
+    // If you need pagination
+    pagination: {
+        el: '.swiper-pagination'
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+    // Your JavaScript code goes here
+    /**
+        document.addEventListener('DOMContentLoaded', function() {
+            let slider = document.querySelector('.project-slider');
+    
+            slider.addEventListener('click', () => {
+                //console.log('Slider clicked!');
+    
+                if(slider.style.animationPlayState !== 'paused'){
+                slider.style.animationPlayState = 'paused'
+                }else{
+                    slider.style.animationPlayState = 'running'
+                }
+            });
+        });
+    */
+</script>
+</body>
+</html>
+<!-- <div class="swiper-slide bg-black text-white px-4 border-separate max-sm:min-h-full mx-2 border-2 py-4 h-auto  hover:bg-cyan-800 cursor-pointer">
+        <img src="https://i.ibb.co/NyKswrw/Screenshot-33.png" class="h-40 w-96">
+        <h1 class="text-center mt-4">Cronometer WebApp</h1>
+        <p class="mt-4 text-center">The Cronometer web project is a nutrition tracking platform designed to help users make informed dietary choices.
+            The project aims to provide a user-friendly and informative experience for individuals interested in tracking their nutrition and 
+            promotes mobile responsiveness and compatibility across various devices.</p><br/>
+            <p class="mt-9 text-center">Tech Stack: Javascript | HTML | CSS</p>
+        <div class="max-lg:flex-col flex justify-between max-lg:pl-10 px-6 mt-[68px]" >
+            <a href="https://github.com/Arish089/CW-PROJECT" class=" border-separate border-2 rounded-md hover:bg-cyan-500 w-20 h-10 text-center my-2">
+                <button class="mt-1">Git Hub</button>
+            </a>
+        <button class=" border-separate border-2 rounded-md hover:bg-cyan-500 w-20">Live Site</button>
+        </div>
+</div>
+
+    
+<div class="swiper-slide bg-black text-white px-4 border-separate border-2 max-sm:min-h-full h-auto mx-2 py-4 hover:bg-cyan-800 cursor-pointer">
+    <img src="https://i.postimg.cc/QCmGbn5j/Screenshot-36.png" class="h-40 w-96">
+    <h1 class="text-center mt-4">Youtube</h1>
+    <p class="mt-4 text-center">The Vite React YouTube project is a SPA built by using Vite and React frameworks, designed to provide users with a seamless and efficient 
+        experience for browsing and watching YouTube videos. It leverages modern web technologies to deliver a fast, ultra-responsive, and feature-rich user interface.</p><br/>
+        <p class="mt-14 text-center">Tech Stack: React | Vite | HTML | Tailwindcss | RESTful API </p>
+    <div class="max-lg:flex-col flex justify-between max-lg:pl-10 px-6 mt-[47px]" >
+        <a href="https://github.com/Arish089/youtube_midas" class="border-separate border-2 rounded-md hover:bg-cyan-500 w-20 h-10 text-center my-2">
+            <button class="mt-1">Git Hub</button>
+        </a>
+    <a href="https://youtube-midas.netlify.app/" class="border-separate border-2 rounded-md text-center pt-[5px] hover:bg-cyan-500 w-20" > <button class="text-center">Live Site</button> </a>
+    </div>
+</div>-->
