@@ -21,34 +21,6 @@
         #projects {
     overflow-x: hidden; /* Hide overflow to prevent showing more than one project at a time and prevent screen expansion */
         }
-/**
-    }
-     .project-slider {
-        display: flex;
-        
-        animation: slide 30s infinite; /* Adjust the duration as needed 
-    }
-    
-    @keyframes slide {
-        0% { transform: translateX(0); }
-        33% { transform: translateX(-33%); }
-        66% { transform: translateX(33%); }
-        100% { transform: translateX(0); }
-    }
-    
-    .project-item {
-        flex: 0 0 auto;
-        margin-right: 20px;
-        width: 60vw;
-        height: 70vh;
-        
-    }
-    
-    .paused{
-        animation-play-state: paused;
-    }
-*/
-
 
     </style>
 </head>
@@ -75,7 +47,7 @@
         style="background-image: url('https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_1280.jpg')">
         <p class="text-xl text-gray-600">Hello, &#128075 <span class="text-yellow-100">I'm</span></p>
         <h1 class="py-4 text-5xl text-gray-600">Arish Ali</h1>
-        <h3 class="text-2xl text-gray-600">And I'm a frontend developer(React)</h3>
+        <h3 class="text-2xl text-gray-600">And I'm a <span class="text-yellow-400">MERN</span> Full Stack Developer</h3>
         <a href="https://drive.google.com/file/d/1sGDoVtD2vmeovcb2gyvqMk13uwM1_Zra/view?usp=sharing" download="ArishAli-FrontendDeveloper(React)-nqxK (1) (1).pdf">
             <button class="border-separate bg-red-400 border-red-400 px-4 py-3 mt-4 w-[120px] rounded-lg hover:bg-blue-400 hover:text-amber-100">Resume</button>
         </a>
@@ -85,22 +57,35 @@
         <h1 class="m-auto text-center font-bold text-[40px] mb-28 ">About Me</h1>
         <div class="sm:ml-32 sm:flex justify-between sm:w-fit shadow-lg p-6 rounded-lg shadow-slate-800">
             <img src="https://i.postimg.cc/66r4NyFf/photo.png" alt="" class="h-80 w-72 rounded-md">
-            <h3 class="max-md:ml-2 md:ml-50 lg:ml-64 mt-20 font-semibold sm:text-xl sm:text-wrap">I'm Arish ali and <span class="text-lime-500">I'm a frontend developer(React)</span> <br><br><span class="text-lg font-normal">
-                I'm a web developer skilled in HTML, CSS, JavaScript, and React, with expertise in building dynamic and responsive websites.
-                 Experienced in utilizing APIs for seamless data integration, I'm dedicated to crafting visually appealing and functional web experiences.</span></h3>
+            <h3 class="max-md:ml-2 md:ml-50 lg:ml-64 mt-20 font-semibold sm:text-xl sm:text-wrap">I'm Arish Ali and <span class="text-lime-500">I'm a full stack developer(MERN)</span> <br><br><span class="text-lg font-normal">
+                Proactive MERN stack developer skilled in MongoDB,
+Express.js, React, and Node.js. Proficient in bridging
+the gap between server-side and client-side
+development. Exceptional at creating dynamic web
+applications using RESTful APIs for an enhanced user
+experience. Strong problem-solving skills and a
+collaborative mindset, continuously delivering
+outstanding outcomes.</span></h3>
                 </div>
     </div>
     <div id="skills" class="bg-slate-950 min-w-full h-auto flex flex-col py-24 items-center text-white ">
         <h1 class="font-semibold text-[40px] pb-10">Skills</h1>
+        <div class="max-lg:flex-col lg:flex lg:gap-5 px-2">
         <div class="bg-slate-800 text-white flex flex-col items-center p-10 mt-10 rounded-lg px-14 hover:bg-sky-700">
             <img src="https://www.htmlpanda.com/assets-new/images/front-end-logo-black.png" class="w-32 h-24" alt="">
             <h2 class="font-medium text-[26px] my-4">Front-End</h2>
-            <p class="font-normal text-[20px] my-4 ">HTML, CSS, JAVASCRIPT & REACT</p>
+            <p class="font-normal text-[20px] my-4 ">HTML, CSS, JS, React & Next.js</p>
         </div>
+        <div class="bg-slate-800 text-white flex flex-col items-center p-10 mt-10 rounded-lg px-14 hover:bg-sky-700">
+            <img src="https://www.htmlpanda.com/assets-new/images/front-end-logo-black.png" class="w-32 h-24" alt="">
+            <h2 class="font-medium text-[26px] my-4">Back-End</h2>
+            <p class="font-normal text-[20px] my-4 ">Node.js, Express, MongoDB</p>
+        </div>
+    </div>
     </div>
     <div>
         <h1 class="mt-20 mb-10 font-bold text-[40px] text-center ">Techstacks</h1>
-    <div id="stacks" class="flex flex-wrap justify-around p-10">
+    <div id="stacks" class="grid grid-cols-4 p-10">
         <div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPmou6evgeGnMsU4Kac3TEv60q65uqVigxib1NYMmoFw&s" alt="">
         </div>
@@ -109,6 +94,15 @@
         </div>
         <div>
             <img class="w-48" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png" alt="">
+        </div>
+        <div>
+            <img src="https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-y563b8iq.png" class="size-48" alt="">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/originals/f3/47/70/f34770503b90f26ea389f557500ff825.png" class="w-56" alt="">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/originals/f3/47/70/f34770503b90f26ea389f557500ff825.png" class="w-56" alt="">
         </div>
         <div>
             <img src="https://i.pinimg.com/originals/f3/47/70/f34770503b90f26ea389f557500ff825.png" class="w-56" alt="">
@@ -249,10 +243,10 @@
     <h1 class="text-center mb-16 font-bold text-[40px] text-white">Contact</h1>
     <div class="max-sm:flex-col max-sm:justify-center max-sm:items-center flex justify-between sm:px-3 bg-slate-900 w-full ">
     
-        <div class="bg-slate-100 max-sm:w-[57%] mb-3 w-[22%] max-lg:w-fit flex lg:pr-4 rounded-md">
-        <a href="mailto:arish.ali089@gmail.com" class="max-xl:flex-col flex ">
+        <div class="bg-slate-100 max-sm:w-[57%] mb-3 w-[22%] max-lg:w-fit flex lg:pr-4 rounded-md px-4 pt-3">
+        <a href="mailto:arish.ali089@gmail.com" class="max-xl:flex-col flex justify-around ">
             <i class="fa-regular fa-4x fa-envelope"></i>
-        <p class="max-sm:ml-0 mt-5 font-bold md:text-xl ">arish.ali089@gmail.com</p>
+        <p class="max-sm:ml-0 ml-5 mt-5 font-bold md:text-xl ">arish.ali089@gmail.com</p>
         </a>    
     </div>
     <div class="bg-slate-100 max-sm:w-[50%] w-[22%] mb-3 flex p-2 rounded-md max-lg:flex-col">
@@ -323,51 +317,7 @@ var mySwiper = new Swiper('.swiper', {
     },
 });
 
-    // Your JavaScript code goes here
-    /**
-        document.addEventListener('DOMContentLoaded', function() {
-            let slider = document.querySelector('.project-slider');
     
-            slider.addEventListener('click', () => {
-                //console.log('Slider clicked!');
-    
-                if(slider.style.animationPlayState !== 'paused'){
-                slider.style.animationPlayState = 'paused'
-                }else{
-                    slider.style.animationPlayState = 'running'
-                }
-            });
-        });
-    */
 </script>
 </body>
 </html>
-<!-- <div class="swiper-slide bg-black text-white px-4 border-separate max-sm:min-h-full mx-2 border-2 py-4 h-auto  hover:bg-cyan-800 cursor-pointer">
-        <img src="https://i.ibb.co/NyKswrw/Screenshot-33.png" class="h-40 w-96">
-        <h1 class="text-center mt-4">Cronometer WebApp</h1>
-        <p class="mt-4 text-center">The Cronometer web project is a nutrition tracking platform designed to help users make informed dietary choices.
-            The project aims to provide a user-friendly and informative experience for individuals interested in tracking their nutrition and 
-            promotes mobile responsiveness and compatibility across various devices.</p><br/>
-            <p class="mt-9 text-center">Tech Stack: Javascript | HTML | CSS</p>
-        <div class="max-lg:flex-col flex justify-between max-lg:pl-10 px-6 mt-[68px]" >
-            <a href="https://github.com/Arish089/CW-PROJECT" class=" border-separate border-2 rounded-md hover:bg-cyan-500 w-20 h-10 text-center my-2">
-                <button class="mt-1">Git Hub</button>
-            </a>
-        <button class=" border-separate border-2 rounded-md hover:bg-cyan-500 w-20">Live Site</button>
-        </div>
-</div>
-
-    
-<div class="swiper-slide bg-black text-white px-4 border-separate border-2 max-sm:min-h-full h-auto mx-2 py-4 hover:bg-cyan-800 cursor-pointer">
-    <img src="https://i.postimg.cc/QCmGbn5j/Screenshot-36.png" class="h-40 w-96">
-    <h1 class="text-center mt-4">Youtube</h1>
-    <p class="mt-4 text-center">The Vite React YouTube project is a SPA built by using Vite and React frameworks, designed to provide users with a seamless and efficient 
-        experience for browsing and watching YouTube videos. It leverages modern web technologies to deliver a fast, ultra-responsive, and feature-rich user interface.</p><br/>
-        <p class="mt-14 text-center">Tech Stack: React | Vite | HTML | Tailwindcss | RESTful API </p>
-    <div class="max-lg:flex-col flex justify-between max-lg:pl-10 px-6 mt-[47px]" >
-        <a href="https://github.com/Arish089/youtube_midas" class="border-separate border-2 rounded-md hover:bg-cyan-500 w-20 h-10 text-center my-2">
-            <button class="mt-1">Git Hub</button>
-        </a>
-    <a href="https://youtube-midas.netlify.app/" class="border-separate border-2 rounded-md text-center pt-[5px] hover:bg-cyan-500 w-20" > <button class="text-center">Live Site</button> </a>
-    </div>
-</div>-->
